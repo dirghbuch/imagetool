@@ -1,0 +1,8 @@
+CREATE TABLE images (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+image_name VARCHAR(30) NOT NULL,
+image_server_name VARCHAR(30) NOT NULL,
+image_caption VARCHAR(50),
+caption_color VARCHAR(50),
+uploaded_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

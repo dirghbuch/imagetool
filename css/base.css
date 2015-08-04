@@ -1,0 +1,71 @@
+@font-face {
+    font-family: stripfonts;
+    src: url(../fonts.ttf);
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+ 
+body { margin: 0; }
+ 
+.columnsContainer { position: relative; margin: .5em; }
+ 
+.image_display_area { border: 1px solid  #ccc; padding: 1.25em; margin-bottom: .5em; background-color: #eee;}
+ 
+.upload_area { border: 1px solid  #ccc; }
+
+@media screen and (min-width: 47.5em ) {
+  .image_display_area { margin-right: 26em; overflow: auto; }
+ 
+  .upload_area { position: absolute; top: 0; right: 0 ; width: 25em; }
+}
+#drop {
+  min-height: 150px;
+  width: 250px;
+  border: 5px dashed gray;
+  margin: 10px;
+  padding: 10px;
+}
+.active {
+  border: 5px dashed green!important;
+}
+.preview { 
+	display:none;
+	width: 320px;
+}
+
+.preview  > img{
+	margin:0px;
+	padding:0px;
+}
+
+.preview > .strip { 
+	background-color: pink;
+	font-family:stripfonts;
+	font-size:16px;
+	padding-left:10px;
+    height: 20px;
+    margin-top: -5px;
+    width: 320px;
+}
+.image_wrapper{
+	width:320px;
+	height:280px;
+	float:left;
+	margin-left:5px;
+}
+.image_wrapper > img{
+	width:320px;
+	height:240px;
+}
+input{
+	margin-top:5px;
+	margin-bottom: 10px;
+}
+.color,.fcolor
+{
+	width:60px !important;
+	float:left !important;
+	margin-left:5px;
+	margin-right:5px;
+}
